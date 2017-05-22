@@ -12,7 +12,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
     @IBOutlet weak var myCollectionView: UICollectionView!
     
-    var images = ["acdc1", "acdc2", "queen1", "queen2"]
+    var images = ["acdc1", "acdc2", "queen1", "queen2","acdc1", "acdc2", "queen1", "queen2","acdc1", "acdc2", "queen1", "queen2", "acdc1", "acdc2", "queen1", "queen2", "acdc1", "acdc2", "queen1", "queen2" ]
     
     var images1 : [UIImage] = [#imageLiteral(resourceName: "acdc1"), #imageLiteral(resourceName: "acdc2"), #imageLiteral(resourceName: "queen1"), #imageLiteral(resourceName: "queen2")]
     
@@ -40,14 +40,16 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
     }
     
-    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let myImageViewPage: ImageViewController = self.storyboard?.instantiateViewController(withIdentifier: "ImageViewController") as! ImageViewController
         
         myImageViewPage.selectedImage = self.images[indexPath.row]
         
         self.navigationController?.pushViewController(myImageViewPage, animated: true)
-        
-        
+        //performSegue(withIdentifier: "myCell", sender: self)
+
     }
     
 

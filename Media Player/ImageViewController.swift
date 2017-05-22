@@ -7,17 +7,63 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ImageViewController: UIViewController {
 
-    @IBOutlet weak var myImageView: UIImageView!
     
     var selectedImage: String!
+    var audioPlayer:AVAudioPlayer = AVAudioPlayer()
     
+    @IBOutlet weak var myImageView: UIImageView!
+
+    @IBAction func nextButton(_ sender: AnyObject) {
+        
+    }
+    @IBAction func prevButton(_ sender: AnyObject) {
+        
+    }
+    
+    @IBAction func stopButton(_ sender: AnyObject) {
+        audioPlayer.stop()
+    }
+    @IBAction func playButton(_ sender: AnyObject) {
+        audioPlayer.play()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if selectedImage == "acdc1" {
+            do {
+                let audioPath = Bundle.main.path(forResource: "back-in-black", ofType: "mp3")
+                try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+            } catch {
+                print("Error")
+            }
+        } else if selectedImage == "acdc2" {
+            do {
+                let audioPath = Bundle.main.path(forResource: "high-way", ofType: "mp3")
+                try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+            } catch {
+                print("Error")
+            }
+        } else if selectedImage == "queen1" {
+            do {
+                let audioPath = Bundle.main.path(forResource: "10-its_late", ofType: "mp3")
+                try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+            } catch {
+                print("Error")
+            }
+        } else if selectedImage == "queen2" {
+            do {
+                let audioPath = Bundle.main.path(forResource: "queen-iw", ofType: "mp3")
+                try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+            } catch {
+                print("Error")
+            }
+        }
+        
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,21 +74,9 @@ class ImageViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         super.viewWillAppear(true)
-        
-        //var selected = self.selectedImage
-        
         self.myImageView.image = UIImage(named: selectedImage)
-        print(selectedImage)
+        
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }

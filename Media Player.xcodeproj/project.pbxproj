@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3208CBEA1EC9E6C5004688A3 /* 10-its_late.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3208CBE91EC9E6C5004688A3 /* 10-its_late.mp3 */; };
+		3208CBEC1EC9EE4C004688A3 /* high-way.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3208CBEB1EC9EE4C004688A3 /* high-way.mp3 */; };
+		3208CBEE1EC9EE56004688A3 /* back-in-black.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3208CBED1EC9EE56004688A3 /* back-in-black.mp3 */; };
+		3208CBF01EC9EE5E004688A3 /* queen-iw.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3208CBEF1EC9EE5E004688A3 /* queen-iw.mp3 */; };
 		321468D31EAE098500C67597 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321468D21EAE098500C67597 /* CollectionViewCell.swift */; };
 		321468D51EAE17CB00C67597 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321468D41EAE17CB00C67597 /* ImageViewController.swift */; };
 		325A85421EAE07CC00FA36A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325A85411EAE07CC00FA36A8 /* AppDelegate.swift */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3208CBE91EC9E6C5004688A3 /* 10-its_late.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "10-its_late.mp3"; sourceTree = "<group>"; };
+		3208CBEB1EC9EE4C004688A3 /* high-way.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "high-way.mp3"; sourceTree = "<group>"; };
+		3208CBED1EC9EE56004688A3 /* back-in-black.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "back-in-black.mp3"; sourceTree = "<group>"; };
+		3208CBEF1EC9EE5E004688A3 /* queen-iw.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "queen-iw.mp3"; sourceTree = "<group>"; };
 		321468D21EAE098500C67597 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		321468D41EAE17CB00C67597 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		325A853E1EAE07CC00FA36A8 /* Media Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Media Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +74,10 @@
 				325A85481EAE07CC00FA36A8 /* Assets.xcassets */,
 				325A854A1EAE07CC00FA36A8 /* LaunchScreen.storyboard */,
 				325A854D1EAE07CC00FA36A8 /* Info.plist */,
+				3208CBE91EC9E6C5004688A3 /* 10-its_late.mp3 */,
+				3208CBEB1EC9EE4C004688A3 /* high-way.mp3 */,
+				3208CBED1EC9EE56004688A3 /* back-in-black.mp3 */,
+				3208CBEF1EC9EE5E004688A3 /* queen-iw.mp3 */,
 			);
 			path = "Media Player";
 			sourceTree = "<group>";
@@ -130,6 +142,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3208CBEE1EC9EE56004688A3 /* back-in-black.mp3 in Resources */,
+				3208CBF01EC9EE5E004688A3 /* queen-iw.mp3 in Resources */,
+				3208CBEC1EC9EE4C004688A3 /* high-way.mp3 in Resources */,
+				3208CBEA1EC9E6C5004688A3 /* 10-its_late.mp3 in Resources */,
 				325A854C1EAE07CC00FA36A8 /* LaunchScreen.storyboard in Resources */,
 				325A85491EAE07CC00FA36A8 /* Assets.xcassets in Resources */,
 				325A85471EAE07CC00FA36A8 /* Main.storyboard in Resources */,
